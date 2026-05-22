@@ -12,7 +12,7 @@ app.MapGet("/jean-pangol", () =>
         { "Nombre",   "Jean" },
         { "Apellido", "Pangol" }
     };
-    return string.Join("  ", info.Select(x => $"{x.Key}: {x.Value}"));
+    return string.Join("\n", info.Select(x => $"{x.Key}: {x.Value}"));
 });
 
 app.Run();
